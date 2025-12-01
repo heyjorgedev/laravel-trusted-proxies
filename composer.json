@@ -1,17 +1,16 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "heyjorgedev/laravel-trusted-proxies",
+    "description": "This is my package laravel-trusted-proxies",
     "keywords": [
-        ":vendor_name",
         "laravel",
-        ":package_slug"
+        "laravel-trusted-proxies"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/heyjorgedev/laravel-trusted-proxies",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Jorge Lapa",
+            "email": "2780099+heyjorgedev@users.noreply.github.com",
             "role": "Developer"
         }
     ],
@@ -30,18 +29,17 @@
         "pestphp/pest-plugin-laravel": "^4.0",
         "phpstan/extension-installer": "^1.4",
         "phpstan/phpstan-deprecation-rules": "^2.0",
-        "phpstan/phpstan-phpunit": "^2.0",
-        "spatie/laravel-ray": "^1.35"
+        "phpstan/phpstan-phpunit": "^2.0"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "HeyJorgeDev\\TrustedProxies\\": "src/",
+            "HeyJorgeDev\\TrustedProxies\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "HeyJorgeDev\\TrustedProxies\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -63,10 +61,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "HeyJorgeDev\\TrustedProxies\\TrustedProxiesServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "TrustedProxies": "HeyJorgeDev\\TrustedProxies\\Facades\\TrustedProxies"
             }
         }
     },

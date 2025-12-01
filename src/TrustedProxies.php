@@ -36,6 +36,6 @@ class TrustedProxies
         /** @var TrustedProxiesProvider $driver */
         $driver = app($provider['driver']);
 
-        Cache::set('trusted-proxies', $driver->get());
+        Cache::forever('trusted-proxies', $driver->get());
     }
 }

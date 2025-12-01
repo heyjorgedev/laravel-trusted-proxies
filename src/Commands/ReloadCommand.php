@@ -2,17 +2,20 @@
 
 namespace HeyJorgeDev\TrustedProxies\Commands;
 
+use HeyJorgeDev\TrustedProxies\Facades\TrustedProxies;
 use Illuminate\Console\Command;
 
-class TrustedProxiesCommand extends Command
+class ReloadCommand extends Command
 {
-    public $signature = 'laravel-trusted-proxies';
+    public $signature = 'trusted-proxies:reload';
 
     public $description = 'My command';
 
     public function handle(): int
     {
-        $this->comment('All done');
+        TrustedProxies::reload();
+
+        $this->info('All done!');
 
         return self::SUCCESS;
     }

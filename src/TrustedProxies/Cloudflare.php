@@ -6,5 +6,8 @@ use HeyJorgeDev\TrustedProxies\Concerns\TrustedProxiesProvider;
 
 class Cloudflare implements TrustedProxiesProvider
 {
-    public function get(): array {}
+    public function get(): array
+    {
+        return [];
+    }
 }
